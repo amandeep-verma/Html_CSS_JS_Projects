@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form tag</title>
+</head>
+<body>
+    <form action="https://www.google.com" method="GET">
+        Name:<input type="text" name="first_name" placeholder="first name" maxlength="10"  required>
+        <input type="text" name="middle_name" id="middle_name" placeholder="middle name">
+        <input type="text" name="last_name" placeholder="last name" required>
+        <br/>
+        Email:<input type="email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="password" password required><br/>
+
+        Comments:<br/>
+        <textarea cols="20" rows="5" name="comments"></textarea><br/>
+
+        <input type="checkbox" name="xyz" id="names">ram
+        <input type="checkbox" name="xyz" id="names" checked>seeta
+        <input type="checkbox" name="xyz" id="names">geeta
+        <input type="checkbox" name="xyz" id="names">fatima <br/>
+
+
+        <input type="radio"  name="xyz" id="names">ram
+        <input type="radio" name="xyz" id="names">seeta
+        <input type="radio" name="xyz" id="names">geeta
+        <input type="radio" name="xyz" id="names" checked>fatima <br/>
+
+        
+        <select name="sex">
+            <option>male</option>
+            <option>female</option>
+            <option selected  >prefer not to say</option>
+        </select>
+
+        <audio controls >
+            <source src="audio/check.ogg" type="audio/ogg">
+        </audio>
+
+        <br/><input type="file" name="uploading" accept="image/*">
+        <br/><input type="reset" value="reset">
+        <br/><input type="submit" value="submit">
+        <br/><input type="image" name="imagebutton" src="image/gotham.png" height="100" width="200">
+        
+    </form>
+</body>
+</html>

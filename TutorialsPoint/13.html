@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML FrameSet</title>
+</head>
+    
+    <frameset rows = "25%,50%,*">
+    <frame name= "top" src= "http://www.node.org" />
+    <frameset cols ="50%,50%">
+        <frame name= "left" src= "https://www.google.com"/>
+        <frame name= "right" src= "https://www.tutorialspoint.com"/>
+    </frameset>
+    
+    <frame name= "bottom" src= "https://www.tutorialspoint.com/index.htm" />
+    <noframes>
+        Your browser doesnt supports frame.
+    </noframes>
+    </frameset>
+<!-- body wont be there in frameset -->
+</html>

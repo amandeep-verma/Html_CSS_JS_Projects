@@ -1,0 +1,302 @@
+<!-- This is how you comment in html -->
+
+<!-- opening and closing html tag -->
+<html>
+
+    <!-- header tag-->
+    <head>
+
+        <!-- a good practise is to to use header, main and footer tag in html, which we are skippping in the cheatsheet -->
+
+        <!-- Meta tag - infromation about the information. Usually sits in the head -->
+        <!-- Does not affect how webpage would look like -->
+        <!-- keywords metatag - helps in finding the page for search engines -->
+        <meta name = "keywords" content = "HTML, CheatSheet, Learning" />
+        <!-- description metatag - used for describing the webpage-->
+        <meta name = "description" content = "Jotting down things for HTML" />
+        <meta name = "revised" content = "CheatSheet, 06/13/20"/>
+        <meta name = "author" content = "Amandeep" />
+
+        <!-- refreshes the webpage every 5 second-->
+        <meta http-equiv="refresh" content="50" />
+
+        <!-- this will refresh page after 10 sec and redirect us to given url-->
+        <!--   <meta http-equiv="refresh" content="10; url = http://www.google.com"/>  -->
+
+        <!-- the meme type for describing the content type of page -->
+        <meta http-equiv="Content-Type" content = "text/html; charset= UTF-8" />
+
+
+        <!-- title tag holds the value of -->
+        <title>Learn From Me</title>
+    </head>
+
+    <!-- Body tag-->
+    <body >
+
+
+        <!-- Header tag- used for headings. Goes from h1 to h6 and size gets smaller as we go from h1 to h6 -->
+        <h1 >Header 1</h1>
+        <h3>Header 3</h3>
+
+        <!-- This inside centre tags appears in the centre -->
+        <center>
+            <h5>Header 5</h5>
+            <h6>Header 6</h6>
+        </center>   
+
+        <!-- Horizontal Line - hr tag draws a horizontal line -->
+        <hr>
+
+        <!-- Paragragh Tag - Used to write paragraph -->
+        <!-- break tag is used to break the line. -->
+        <!-- &nbsp; is used to add space -->
+        <p >
+            This is the paragraph tag of the cheatsheet html page.      Like here if we leave the spaces
+            or drops to next line straight,
+            
+            it would not reflect on html page. Because html reads things inside paragraph tag as a paragraph. But 
+            when the space on the line of html page is done it will began from next line automatically. To break 
+            a line we will use break tag. </br> This line will drop straight to next line. </br> Similarly to give 
+            extra space we will use nbsp like this &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and this gives extra 3 spaces.
+        </p>
+
+        <!-- Line 206 makes sense for this-->
+        <!-- Making a bookmark using anchor tag for reference-->
+        <a name = "BOOKMARK1"> Anchor used with bookmark</a> <br>
+
+        <!-- text can be typed with no tags in body -->
+        You can start writing without paragraph tag.
+
+        <!-- align is attribue and center is value -->
+        <!-- There are default values associated with attributes. For ex- header align attribute default value is left -->
+        <h2 align = "center" style=" background-color: coral;"> Heading in centre using attribute</h2>
+        <h3 align = "right">Heading in right using attribute</h3>
+
+        <!-- here hr attribute values are changes and we can see the align default value is center -->
+        <!-- color tag works with hr -->
+        <hr width = "50%"/>
+        <hr width = "25%" align = "right" color="red" />
+
+        <!-- to change color of tags with content in between use style attribute -->
+        <h6 style="color:red;">I AM RED heading</h6>
+
+
+        <!-- FORMATTING TAGS -->
+        <!-- bold tag-->
+        <b> I ll be bold </b> <br/>
+        <!-- italics tag -->
+        <i> i ll be italic</i> <br/>
+        <!-- underline tag -->
+        <u> i ll be underlined</u> <br/>
+
+        <!-- using tags together and changing attribute -->
+        <b ><u style="color:blue"><i>  I am all</i></u></b> <br/>
+
+        <!-- Strike Tag --> 
+        The text inside <strike> will be </strike> striked. <br/>
+
+        <!-- Subscript Tag -->
+        H<sub>2</sub>O <br/>
+        
+        <!-- Superscript Tag -->
+        this is how 10 power 3 looks like -> 10<sup>3</sup> <br/>
+
+        <!-- Small Tag and Big Tag -->
+        Lets see how <small>small tag</small> and how <big>big tag </big> looks like <br/>
+
+        <!-- tt keeps the monospace ie every character takes the same space -->
+        <tt>Let see how this one works </tt> <br/>
+
+
+        <!-- Phrase tags -->
+        <!-- Emphasize Tag - makes the thing in italic -->
+        <!-- Mark Tag - makes the content inside highlighted -->
+        <!-- Strong Tag - makes the content inside bold -->
+        <p> Lets see how the <em> emphaise tag</em>, <mark> mark tag</mark> and <strong>strong tag</strong> looks like.</p> <br/>
+
+        <!--  Abbreviation Tag -->
+        Welcome to <abbr title = "CheatSheet for HTML">CS</abbr> <br>
+
+        <!-- Address Tag - line automatically breaks and things inside gets in italic -->
+        Please reach out to me on <address>Area 51, Newark, Nevada - 85738</address> <br>
+
+        <h3 align= "center">Gotham Welcomes you</h3> 
+        <!-- Attaching the image to the webpage -->
+        <!-- If image does not load, the text inside alt(alternative text) will be dispayed-->
+        <img src="image/gothamcity.png" alt = "Gotham city must be here" border = "2" align= "right" height="200" width= "300">
+
+        
+        <!-- TABLES -->
+        <!-- border, width, cellpadding, cellspacing are attributes-->
+        <!-- cellpadding is for spacing of characters from cell, cellspacing is for spacing in between cells -->
+        <table border = "3" width="500px" cellpadding="5" cellspacing = "5" background = "image/gotham.png" style="color:white">
+
+            <!-- caption tags add the caption above the table-->
+            <caption>The caption for the table </caption>
+
+            <!-- adding header and footer to the table-->
+            <thead>
+                <tr>
+                    <!-- colspan attribute extends the specific column to the specfied number of columns -->
+                    <td align = "center" colspan =3> Details</td>
+                </tr>
+            </thead>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3" align = "right" > Ends</td>
+                </tr>
+            </tfoot>
+
+            <!-- tr for row in table -->
+            <tr>
+                <!-- th - table heading-->
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+            </tr>
+
+            <!-- tr for row in table -->
+            <tr>
+                <!-- td - table data-->
+                <td>Alexandra</td>
+                <td>21</td>
+                <td>Pluto</td>
+            </tr>
+            <tr>
+                <!-- background color can be used to change the color-->
+                <td bgcolor="tan" >Zainait</td>
+                <td>22</td>
+                <td>Mercury</td>
+            </tr>
+        </table>
+
+
+        <!-- LIST TAGS -->
+        <h3>Web Development Technologies</h3>
+        <hr/ align="left" width= 50% >
+        <!-- Unordered List -->
+        <!-- by default type attribute is disc, it can be changed to square, circle etc-->
+        <ul type=square>
+            <!-- list items -->
+            <li>ASP.NET</li>
+            <li>EJB</li>
+            <li>PHP</li>
+        </ul>
+
+        <h3>Web Development Technologies</h3>
+        <hr/ align="left" width= 50% >
+        <!-- Ordered List-->
+        <!-- by default type attribute is number, it can be changed to "a","A","i","I" etc-->
+        <!-- start attribute is to define the starting point-->
+        <ol type="i" start = 4>
+            <li>ASP.NET</li>
+            <li>EJB</li>
+            <li>PHP</li>
+        </ol>
+
+
+        <!-- HYPERLINK -->
+        <!-- Anchor Tag -->
+        <!-- href attribute stand for hyper reference, used to redirect to the webpage-->
+        <a href= http://www.google.com > Click here to go to Google.com </a>
+
+        <!-- Using anchor tag with a image -->
+        <!-- In href bookmark is used to go anchor tag BOOKMARK1 at line 64 -->
+        <!-- remember we use # to location BOOKMARK1 anchor tag on this page-->
+        <a href= "#BOOKMARK1" > <img src = "image/baboon.png" height="70" width="70"> </a>
+
+
+        <!-- BLOCKS -->
+        <!-- division tags -->
+        <div style="color: green">
+            
+            <h3>Web Development Technologies</h3>
+            <ul type=square>
+                <li>ASP.NET</li>
+                <li>EJB</li>
+                <li>PHP</li>
+            </ul>
+
+        </div>
+
+
+        <!-- FORM TAG -->
+        <!-- action is the page user is redirected to after submission -->
+        <!-- method defines the way data is submitted to the server (get/post) -->
+        <!-- get sends data to server from url -->
+        <!-- post is send as http request -->
+        <form action="https://www.google.com" method="GET">
+
+            <!-- input tag is used to take the inputs-->
+            <!-- type is attribute for type of data -->
+            <!-- placeholder is used for the help text in the text box -->
+            <!-- name/id attribute is used for uniqueness of all the values. The values can be accessed by using this name-->
+            <!-- required makes it mandatory for user to enter the data for submission --> 
+            Name:<input type ="text" placeholder="firstname" name="first_name" maxlength= 15 required>
+            <input type="text" name="middle_name" placeholder="middle name">
+            <input type="text" name="last_name" placeholder="last name" required>
+            <br/>
+            Email Id:<input type ="email" name= "email" required>
+            Password:<input type="password" name = "password" required><br>
+
+            Any other information you want to submit<br>
+            <!--textarea tag is used to take the inputs in form of big texts-->
+            <textarea rows="5" cols="50" name="details"></textarea><br>
+
+            Languages you know :
+            <!-- attribute type with checkbox gives option of checking the box, specifying checked ticks the box by default-->
+            <input type="checkbox" name= "java" checked> Java
+            <input type="checkbox" name="c"> C
+            <input type="checkbox" name=python> Python<br/>
+
+            Position you are looking for :
+            <!-- attribute tyep radio lets you choose only 1 option, make sure you use same name attribute for all options-->
+            <input type="radio" name="position"> software engineer
+            <input type="radio" name="position"> data science
+            <input type="radio" name="position"> data analytics <br>
+
+            Sex:
+            <!-- drop down option - to give the option to the user-->
+            <select name="sex">
+                <option>male</option>
+                <option>female</option>
+                <!-- selected makes the default selection -->
+                <option selected>prefer not to say</option> 
+            </select><br>
+
+            Submit your resume:
+            <!-- for attaching files, type attribute can be set to file-->
+            <input type="file" name="resume" accept="resume/*"> <br/>
+            <!-- for submitting, resetting and adding extra buttons, attribute type can be changed like this-->
+            <input type="reset" value="Reset" name="reset"> 
+            <input type="submit" value="Submit" name = "submit"> <br/>
+            <!-- extra functionality can be added using JavaScript to a simple button-->
+            <input type="button" value="OK" name="pk"><br>
+            <!-- image type button-->
+            <input type="image" name="ImageButton" src="image/earth.png" >
+
+        </form>
+
+
+        <!-- Marque tag - to move the object -->
+        <marquee direction="up" height="100" behavior="alternate">lets move  </marquee>
+
+        <!-- now here we can do nesting of marque -->
+        <marquee direction="up" height="100" behavior="alternate"> 
+            <marquee direction="right" height="20" behavior="alternate"> MAGIC</marquee>
+        </marquee>
+
+
+        <!-- Embed Tag - to embed a video   -->
+        <embed src= "video/Color Black.mp4" height="300" width="600" >
+            <noembed>media not supported by browser</noembed>
+        </embed> 
+
+
+
+
+
+    </body>
+</html>
