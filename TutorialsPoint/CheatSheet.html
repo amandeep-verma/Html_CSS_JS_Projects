@@ -1,5 +1,9 @@
 <!-- This is how you comment in html -->
 
+<!-- This is to tell what version of html we are using-->
+<!-- DOCTYPE means html5-->
+<!DOCTYPE html>
+
 <!-- opening and closing html tag -->
 <html>
 
@@ -124,6 +128,7 @@
         <h3 align= "center">Gotham Welcomes you</h3> 
         <!-- Attaching the image to the webpage -->
         <!-- If image does not load, the text inside alt(alternative text) will be dispayed-->
+        <!-- for performance always crop your image before rendering your website, saves time and resources -->
         <img src="image/gothamcity.png" alt = "Gotham city must be here" border = "2" align= "right" height="200" width= "300">
 
         
@@ -200,7 +205,7 @@
         <!-- HYPERLINK -->
         <!-- Anchor Tag -->
         <!-- href attribute stand for hyper reference, used to redirect to the webpage-->
-        <a href= http://www.google.com > Click here to go to Google.com </a>
+        <a href= http://www.google.com >Click here to go to Google.com </a>
 
         <!-- Using anchor tag with a image -->
         <!-- In href bookmark is used to go anchor tag BOOKMARK1 at line 64 -->
@@ -232,13 +237,14 @@
             <!-- input tag is used to take the inputs-->
             <!-- type is attribute for type of data -->
             <!-- placeholder is used for the help text in the text box -->
-            <!-- name/id attribute is used for uniqueness of all the values. The values can be accessed by using this name-->
+            <!-- name attribute is used for uniqueness of all the values. The values can be accessed by using this name. It is used when collecting the data-->
             <!-- required makes it mandatory for user to enter the data for submission --> 
             Name:<input type ="text" placeholder="firstname" name="first_name" maxlength= 15 required>
             <input type="text" name="middle_name" placeholder="middle name">
             <input type="text" name="last_name" placeholder="last name" required>
             <br/>
-            Email Id:<input type ="email" name= "email" required>
+            <!-- Value attribute- you can hardcode something like this using value attribute --> 
+            Email Id:<input type ="email" name= "email" value="email@email" required>
             Password:<input type="password" name = "password" required><br>
 
             Any other information you want to submit<br>
@@ -296,6 +302,8 @@
 
 
 
+
+        
 
 
     </body>
