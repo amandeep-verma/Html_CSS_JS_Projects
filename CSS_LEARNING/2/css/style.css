@@ -1,0 +1,37 @@
+/* all elements under body will inherit the property of body unless they are overridden */
+/* not all properties would be imherited- like border */
+body {
+  color: blue;
+  font-family: monospace;
+  border: 3px solid black;
+  line-height: 1.5em;
+}
+
+/* selecting selector by id and grouping them together */
+#heading1,
+#heading2 {
+  color: rgb(247, 37, 37);
+  background-color: rgb(0, 0, 0);
+}
+
+.miracle {
+  color: darkgreen;
+  background-color: pink;
+}
+
+div {
+  color: green;
+  background-color: black;
+}
+
+span {
+  text-transform: uppercase;
+  color: rgb(255, 0, 0);
+}
+
+#unique {
+  color: yellow;
+}
+
+/* if you overwrite the css property for the same element last one will be the final */
+/* specificity also matter in terms of css. Properties on some specific tags  is considered over a generic tag  irrespective of its declaration after or before specific tag*/

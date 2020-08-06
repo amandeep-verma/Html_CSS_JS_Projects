@@ -1,0 +1,17 @@
+/* This is how you comment in CSS */
+/*  css rule -> selectors declaration box */
+/* h1 is selector and { color : pink } is declaration box */
+
+h1 {
+  color: pink;
+}
+
+h2 {
+  color: aqua;
+}
+
+/* can be seen in about.html */
+h3 {
+  color: chartreuse;
+  font-size: 15mm;
+}
