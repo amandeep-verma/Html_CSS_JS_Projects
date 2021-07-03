@@ -43,12 +43,13 @@ function check(name = "Amandeep") // If you wont pass anything, it will set defa
 {
     return name;
 }
+
 console.log(check());
 console.log(check("Verma"));
 
 
 
-// Rest operator inside anonymous class using arrow function
+// Rest parametres inside anonymous class using arrow function
 const sum = (() =>
 {
     return (...args) => {  // ...args is Rest operator

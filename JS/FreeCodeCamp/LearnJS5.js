@@ -6,6 +6,7 @@ const person = {
 // ` - backticks
 const greeting = `We welcome you ${person.name}, 
 your age is ${person.age}?`;
+
 console.log(greeting);
 
 

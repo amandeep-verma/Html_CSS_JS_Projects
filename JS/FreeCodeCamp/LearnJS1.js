@@ -9,7 +9,7 @@ undefined, null, boolean, string, symbol, number, and object
 
 // 3way to declare the variable in JS
 var myName = "Amandeep";
-myName = 8; // scope through out the program
+myName = 8; // scope through out the program (global variable)
 let ourName = "freeCodeCamp";  // scope limited to the block it exists in
 const pi = 3.14 // a variable which can't be changed
 

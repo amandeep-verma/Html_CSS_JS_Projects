@@ -45,4 +45,3 @@ if( a!== b) // strict unequality operator, checks the data type as well
 
 var a = undefined
 console.log(a)
-
