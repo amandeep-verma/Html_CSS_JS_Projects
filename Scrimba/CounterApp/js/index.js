@@ -10,7 +10,7 @@ function increment() {
 
 function save() {
     let countStr = count + " - "
-    saveEl.textContent += countStr
+    saveEl.textContent += countStr // textContent is better way of selecting the inner text
     count=0
     countEl.innerText = count
 }
