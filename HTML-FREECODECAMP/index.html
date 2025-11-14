@@ -1,122 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>First WebPage</title>
-  </head>
-  <body>
-    <h1 name="top">I'm heading 1</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum possimus
-      adipisci accusantium error, iste ullam amet facilis magni non
-      consequuntur! Eos quia facere nemo, aliquam alias omnis culpa similique
-      atque, maiores, minima accusamus laudantium. Velit aliquam labore dolor
-      unde deserunt vel laboriosam possimus sunt corporis reprehenderit sit,
-      porro nam mollitia officia earum et autem quia facilis.
-    </p>
 
-    <h3>Udemy Logo</h3>
-    <img src="image/download.jpeg" alt="udemy image" />
-    <!-- setting up target gets the link opened in the new tab-->
-    <a href="https://www.udemy.com/" target="_blank">visit udemy </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First WebPage</title>
+</head>
+
+<body>
+  <h1 name="top">I'm heading 1</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum possimus
+    adipisci accusantium error, iste ullam amet facilis magni non
+    consequuntur! Eos quia facere nemo, aliquam alias omnis culpa similique
+    atque, maiores, minima accusamus laudantium. Velit aliquam labore dolor
+    unde deserunt vel laboriosam possimus sunt corporis reprehenderit sit,
+    porro nam mollitia officia earum et autem quia facilis.
+  </p>
+
+  <h3>Udemy Logo</h3>
+  <img src="image/download.jpeg" alt="udemy image" />
+  <!-- setting up target gets the link opened in the new tab-->
+  <a href="https://www.udemy.com/" target="_blank">visit udemy </a>
+  <br />
+  <h3>About me</h3>
+  <a href="aboutme.html">about me</a>
+  <br />
+  <a href="#"> this is dummy reference</a><br />
+
+  <h3>I am <sup>1st</sup> John <sub>in the town</sub></h3>
+  <p>
+    Lorem ipsum dolor, sit amet <strong>consectetur </strong>
+    <em>adipisicing elit. Quod fugit nam ipsum voluptatibus </em> esse
+    molestias aspernatur culpa, quos quam illo?
+  </p>
+
+  <!-- special characters -->
+  <h4>Copyright &copy;</h4>
+
+  <h3>List</h3>
+  <ul>
+    <li>John</li>
+    <li>Peter</li>
+    <ol>
+      <li>html</li>
+      <li>css</li>
+    </ol>
+    <li>Sara</li>
+  </ul>
+
+  <h3>Table</h3>
+  <table border="3">
+    <tr>
+      <th>Name</th>
+      <th>Chemistry</th>
+      <th>Physics</th>
+    </tr>
+
+    <tr>
+      <td>john</td>
+      <td>30</td>
+      <td>30</td>
+    </tr>
+
+    <tr>
+      <td>Sara</td>
+      <td>33</td>
+      <td>36</td>
+    </tr>
+  </table>
+
+  <h3>Form tag</h3>
+  <form action="" method="">
+    <!-- clicking on the label in html page the field will be highlighted if id matches -->
+    <label for="name12">First Name</label>
+    <!-- name is used for collecting data -->
+    <!-- id is for label tag or can be used with javascript -->
+    <input type="text" name="name" id="name12" />
     <br />
-    <h3>About me</h3>
-    <a href="aboutme.html">about me</a>
+    <!-- placeholder is used to indicate what will be filled -->
+    <input type="password" placeholder="password" />
     <br />
-    <a href="#"> this is dummy reference</a><br />
+    <!-- Value attribute can be used to hardcode something-->
+    <input type="email" value="email@email" />
+    <!-- again value attribute can be changed like this -->
+    <input type="submit" value="lol" /> <br />
 
-    <h3>I am <sup>1st</sup> John <sub>in the town</sub></h3>
-    <p>
-      Lorem ipsum dolor, sit amet <strong>consectetur </strong>
-      <em>adipisicing elit. Quod fugit nam ipsum voluptatibus </em> esse
-      molestias aspernatur culpa, quos quam illo?
-    </p>
+    <p>Description</p>
+    <textarea name="" id="" cols="30" rows="5"></textarea>
+    <br />
 
-    <!-- special characters -->
-    <h4>Copyright &copy;</h4>
+    <!-- value attribute is used as the value field for what you want to collect the value after submission-->
+    <p>Select your fav coding language</p>
+    <input type="radio" name="coding" value="Java" />Java
+    <input type="radio" name="coding" id="" value="Python" />Python
+    <input type="radio" name="coding" id="" value="JS" />JavaScript
+    <br />
 
-    <h3>List</h3>
-    <ul>
-      <li>John</li>
-      <li>Peter</li>
-      <ol>
-        <li>html</li>
-        <li>css</li>
-      </ol>
-      <li>Sara</li>
-    </ul>
+    <!-- value here again is used to collect data when submitting-->
+    <p>Select the locations you can work in</p>
+    <input type="checkbox" name="location" value="albama" checked />Albama
+    <input type="checkbox" name="location" value="seattle" />Seattle
+    <input type="checkbox" name="location" value="nyc" />New York
+    <br />
 
-    <h3>Table</h3>
-    <table border="3">
-      <tr>
-        <th>Name</th>
-        <th>Chemistry</th>
-        <th>Physics</th>
-      </tr>
+    Sex:
+    <!-- drop down menu -->
+    <!-- while submitting you can see the value attribute being send in the link after submission -->
+    <select name="sex">
+      <option value="male">male</option>
+      <option value="female">female</option>
+      <option value="prefer not to say">prefer not to say</option>
+    </select>
 
-      <tr>
-        <td>john</td>
-        <td>30</td>
-        <td>30</td>
-      </tr>
+    <br />
+    <button type="submit">submit</button>
+  </form>
 
-      <tr>
-        <td>Sara</td>
-        <td>33</td>
-        <td>36</td>
-      </tr>
-    </table>
+  <br /><br />
 
-    <h3>Form tag</h3>
-    <form action="" method="">
-      <!-- clicking on the label in html page the field will be highlighted if id matches -->
-      <label for="name12">First Name</label>
-      <!-- name is used for collecting data -->
-      <!-- id is for label tag or can be used with javascript -->
-      <input type="text" name="name" id="name12" />
-      <br />
-      <!-- placeholder is used to indicate what will be filled -->
-      <input type="password" placeholder="password" />
-      <br />
-      <!-- Value attribute can be used to hardcode something-->
-      <input type="email" value="email@email" />
-      <!-- again value attribute can be changed like this -->
-      <input type="submit" value="lol" /> <br />
+  <a href="#top">throw me on top</a>
+</body>
 
-      <p>Description</p>
-      <textarea name="" id="" cols="30" rows="5"></textarea>
-      <br />
-
-      <!-- value attribute is used as the value field for what you want to collect the value after submission-->
-      <p>Select your fav coding language</p>
-      <input type="radio" name="coding" value="Java" />Java
-      <input type="radio" name="coding" id="" value="Python" />Python
-      <input type="radio" name="coding" id="" value="JS" />JavaScript
-      <br />
-
-      <!-- value here again is used to collect data when submitting-->
-      <p>Select the locations you can work in</p>
-      <input type="checkbox" name="location" value="albama" checked />Albama
-      <input type="checkbox" name="location" value="seattle" />Seattle
-      <input type="checkbox" name="location" value="nyc" />New York
-      <br />
-
-      Sex:
-      <!-- drop down menu -->
-      <!-- while submitting you can see the value attribute being send in the link after submission -->
-      <select name="sex">
-        <option value="male">male</option>
-        <option value="female">female</option>
-        <option value="prefer not to say">prefer not to say</option>
-      </select>
-
-      <br />
-      <button type="submit">submit</button>
-    </form>
-
-    <br /><br />
-
-    <a href="#top">throw me on top</a>
-  </body>
 </html>
