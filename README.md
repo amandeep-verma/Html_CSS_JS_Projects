@@ -6,3 +6,4 @@ The repository contains various folders as follows -
 4. HTML-TutorialsPoint - HTML tutorial practise from [tutorialspoint](https://www.tutorialspoint.com/)
 5. JS - JS tutorial from freecodecamp and Telusko
 6. Scrimba - JS applications from Scrimba
+7. React 
